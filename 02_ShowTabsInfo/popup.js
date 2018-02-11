@@ -1,6 +1,6 @@
 'use strict';
 
-chrome.tabs.query({}, function(tabs) {
+chrome.tabs.query({active: true}, function(tabs) {
   var i;
   var results = document.getElementById('results');
   var titles = [];
